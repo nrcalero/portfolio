@@ -8,7 +8,7 @@ class App extends Component {
 		return (
 			<div>
 				<nav class="navbar navbar-expand-md navbar-light bg-light">
-					<a class="navbar-brand logo" href="#">
+					<a class="navbar-brand logo" href="">
 						<img src="img/N.svg" alt="logo"/>
 					</a>
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#tabs" aria-controls="tabs" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,7 +23,7 @@ class App extends Component {
 								<Link class="nav-link" to="/about">About</Link>
 							</li>
 							<li class="nav-item logo">
-								<a class="nav-brand" href="#">
+								<a class="nav-brand" href="">
 									<img src="img/N.svg" alt="logo"/>
 								</a>
 							</li>
