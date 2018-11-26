@@ -1,0 +1,62 @@
+html {
+	font-family: 'Lato', 'Roboto', sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+body {
+	font-family: inherit;  
+}
+
+.logo img {
+	cursor: default;
+	height: 30px;
+	width: 30px;
+}
+
+.active {
+	font-style: bold;
+	font-size: 1.1em;
+	letter-spacing: 1px;
+}
+
+.nav-link{
+	transition-duration: .5s;
+}
+
+.nav-link:hover {
+ 	letter-spacing: 1px;
+}
+
+#content {
+	height: auto;
+}
+
+.footer :first-child {
+	margin-bottom: 0;
+}
+
+.footer :last-child {
+	margin-top: 0;
+  	font-size: .8em;
+}
+
+@media screen and (max-width: 576px) {
+   	.display-1 {
+    	font-size: 5em;
+   	}
+}
+
+@media screen and (max-width: 767px) {
+  	.logo.nav-item {
+    	display: none;
+  	}
+}
+
+@media screen and (min-width: 768px) {
+  	.logo.navbar-brand {
+    	display: none;
+  	}
+}
