@@ -6,13 +6,13 @@ a.navbar-brand.logo {
 .logo img {
 	height: 50px;
 	width: 50px;
-}f
+}
 
-.nav-link{
+.nav-item {
 	transition-duration: .5s;
 }
 
-.nav-link:hover {
+.nav-item:hover {
  	letter-spacing: 1px;
 }
 

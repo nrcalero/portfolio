@@ -46,8 +46,8 @@ class App extends Component {
 	}    
 	componentDidMount () {
 		const tabs = document.getElementById('tabs');
-		const links = tabs.querySelectorAll('.nav-link');
-		const toggler = document.querySelector('.navbar-toggler');
+		const links = tabs.querySelectorAll('.nav-item');
+		const toggler = document.querySelector('.navbar-toggler')[0];
 
 		links.forEach((link) => {
 			link.addEventListener('click', () => {
