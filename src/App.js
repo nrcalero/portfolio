@@ -23,7 +23,7 @@ class App extends Component {
 								<Link className="nav-link" to="/about">Resume</Link>
 							</li>
 							<li className="nav-item logo">
-								<Link className="nav-brand" to="/">
+								<Link className="nav-brand" to="/portfolio">
 									<img src="img/N.svg" alt="logo"/>
 								</Link>
 							</li>

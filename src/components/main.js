@@ -9,7 +9,7 @@ import Stuff from './stuff';
 
 const Main = () => (
     <Switch>
-        <Route exact path="/" component={Home} />
+        <Route path="/portfolio" component={Home} />
         <Route path="/about" component={About} />
         <Route path="/contact" component={Contact} />
         <Route path="/work" component={Work} />
