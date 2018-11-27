@@ -1,26 +1,12 @@
-html {
-	font-family: 'Lato', 'Roboto', sans-serif;
-	font-size: 16px;
-	line-height: 1.5;
-	-ms-text-size-adjust: 100%;
-	-webkit-text-size-adjust: 100%;
-}
-
-body {
-	font-family: inherit;  
+a.navbar-brand.logo {
+	padding: 0;
+	margin: 0;
 }
 
 .logo img {
-	cursor: default;
-	height: 30px;
-	width: 30px;
-}
-
-.active {
-	font-style: bold;
-	font-size: 1.1em;
-	letter-spacing: 1px;
-}
+	height: 50px;
+	width: 50px;
+}f
 
 .nav-link{
 	transition-duration: .5s;
@@ -30,17 +16,13 @@ body {
  	letter-spacing: 1px;
 }
 
-#content {
-	height: auto;
-}
-
 .footer :first-child {
 	margin-bottom: 0;
 }
 
 .footer :last-child {
-	margin-top: 0;
-  	font-size: .8em;
+	margin-top: -5px;
+  	font-size: .6em;
 }
 
 @media screen and (max-width: 576px) {

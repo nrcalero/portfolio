@@ -1,19 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class Work extends Component {
-    render() {
-        return (
-            <div class="jumbotron jumbotron-fluid">
-                <div class="container text-center">
-                    <h1 class="display-1">Selected Work</h1>
-                    <h2 class="text-muted">
-                        This website is currently under construction.
-                    </h2>
-                    <p>Stay tuned for updates in the near future!</p>
-                </div>
-            </div>
-        )
-    }
-}
+const Work = () => (
+    <div className="jumbotron jumbotron-fluid">
+        <div className="container text-center">
+            <h1>Selected Work</h1>
+            <h3 className="text-muted">
+                This website is currently under construction.
+            </h3>
+            <p>Stay tuned for updates in the near future!</p>
+        </div>
+    </div>
+)
 
 export default Work;

@@ -7,43 +7,56 @@ class App extends Component {
 	render() {
 		return (
 			<div>
-				<nav class="navbar navbar-expand-md navbar-light bg-light">
-					<a class="navbar-brand logo" href="">
+				<nav className="navbar navbar-expand-md navbar-light bg-light">
+					<Link className="navbar-brand logo" to="/">
 						<img src="img/N.svg" alt="logo"/>
-					</a>
-					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#tabs" aria-controls="tabs" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
+					</Link>
+					<button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#tabs" aria-controls="tabs" aria-expanded="false" aria-label="Toggle navigation">
+						<span className="navbar-toggler-icon"></span>
 					</button>
-					<div id="tabs" class="collapse navbar-collapse">
-						<ul class="navbar-nav nav-fill w-100 align-items-center">
-							<li class="nav-item">
-								<Link class="nav-link" to="/work">Work</Link>
+					<div id="tabs" className="collapse navbar-collapse">
+						<ul className="navbar-nav nav-fill w-100 align-items-center">
+							<li className="nav-item">
+								<Link className="nav-link" to="/work">Work</Link>
 							</li>
-							<li class="nav-item">
-								<Link class="nav-link" to="/about">About</Link>
+							<li className="nav-item">
+								<Link className="nav-link" to="/about">Resume</Link>
 							</li>
-							<li class="nav-item logo">
-								<a class="nav-brand" href="">
+							<li className="nav-item logo">
+								<Link className="nav-brand" to="/">
 									<img src="img/N.svg" alt="logo"/>
-								</a>
+								</Link>
 							</li>
-							<li class="nav-item">
-								<Link class="nav-link" to="/contact">Contact</Link>
+							<li className="nav-item">
+								<Link className="nav-link" to="/contact">Contact</Link>
 							</li>
-							<li class="nav-item">
-								<Link class="nav-link" to="/stuff">Stuff</Link>
+							<li className="nav-item">
+								<Link className="nav-link" to="/stuff">Stuff</Link>
 							</li>
 						</ul>
 					</div>
 				</nav>
 				<Main />
-				<div class="footer container-fluid text-right">
+				<div className="footer container-fluid text-right">
 					<p>© 2018 nrcalero</p>
 					<p>Built with Bootstrap</p>
 				</div>
 			</div>
 		);
-	}
+	}    
+	componentDidMount () {
+		const tabs = document.getElementById('tabs');
+		const links = tabs.querySelectorAll('.nav-link');
+		const toggler = document.querySelector('.navbar-toggler');
+
+		links.forEach((link) => {
+			link.addEventListener('click', () => {
+				const expanded = toggler.getAttribute('aria-expanded');
+				if(expanded === 'true')
+					toggler.click();
+			})
+		});
+    }
 }
 
 export default App;
