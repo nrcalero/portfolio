@@ -23,7 +23,7 @@ class App extends Component {
 								<Link className="nav-link" to="/about">Resume</Link>
 							</li>
 							<li className="nav-item logo">
-								<Link className="nav-brand" to="/portfolio">
+								<Link className="nav-link" to="/portfolio">
 									<img src="img/N.svg" alt="logo"/>
 								</Link>
 							</li>
@@ -47,7 +47,7 @@ class App extends Component {
 	componentDidMount () {
 		const tabs = document.getElementById('tabs');
 		const links = tabs.querySelectorAll('.nav-item');
-		const toggler = document.querySelector('.navbar-toggler')[0];
+		const toggler = document.querySelector('.navbar-toggler');
 
 		links.forEach((link) => {
 			link.addEventListener('click', () => {

@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://nrcalero.github.io/portfolio",
+  "homepage": "https://nrcalero.github.io/",
   "dependencies": {
     "@types/jest": "^23.3.9",
     "gh-pages": "^2.0.1",
