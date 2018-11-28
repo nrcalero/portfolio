@@ -8,7 +8,7 @@ class App extends Component {
 		return (
 			<div>
 				<nav className="navbar navbar-expand-md navbar-light bg-light">
-					<Link className="navbar-brand logo" to="/">
+					<Link className="navbar-brand logo" to="/portfolio">
 						<img src="img/N.svg" alt="logo"/>
 					</Link>
 					<button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#tabs" aria-controls="tabs" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,14 +47,21 @@ class App extends Component {
 	componentDidMount () {
 		const tabs = document.getElementById('tabs');
 		const links = tabs.querySelectorAll('.nav-item');
+		const brand = document.getElementsByClassName('navbar-brand');
 		const toggler = document.querySelector('.navbar-toggler');
 
-		links.forEach((link) => {
+		links.forEach(link => {
 			link.addEventListener('click', () => {
 				const expanded = toggler.getAttribute('aria-expanded');
 				if(expanded === 'true')
 					toggler.click();
 			})
+		});
+
+		brand[0].addEventListener('click', () => {
+			const expanded = toggler.getAttribute('aria-expanded');
+			if(expanded === 'true')
+				toggler.click();
 		});
     }
 }
