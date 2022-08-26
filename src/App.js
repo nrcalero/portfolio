@@ -38,8 +38,8 @@ class App extends Component {
 				</nav>
 				<Main />
 				<div className="footer container-fluid text-right">
-					<p>© 2018 nrcalero</p>
-					<p>Built with Bootstrap</p>
+					<p>© Nathanyel Calero 2022</p>
+					<p>Built with Bootstrap and React</p>
 				</div>
 			</div>
 		);

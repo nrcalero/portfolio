@@ -3,17 +3,34 @@ a.navbar-brand.logo {
 	margin: 0;
 }
 
+.navbar {
+	display: flex;
+	position: fixed;
+	z-index: 100;
+	width: 100%;
+	box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
+}
+  
+
 .logo img {
 	height: 50px;
 	width: 50px;
 }
 
 .nav-item {
-	transition-duration: .5s;
+	transition-duration: .25s;
+}
+
+.logo {
+	scale: 1.1;
 }
 
 .nav-item:hover {
- 	letter-spacing: 1px;
+ 	letter-spacing: 0.2px;
+}
+
+.jumbotron {
+	padding: 12em 0 7.5em 0;
 }
 
 .footer :first-child {
