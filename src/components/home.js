@@ -4,8 +4,8 @@ const Home = () => (
     <div className="jumbotron jumbotron-fluid">
         <div className="container text-center">
             <h1>Nathanyel Calero</h1>
-            <h2 className="text-muted">Web <b>Developer</b> and <b>Designer</b></h2>
-            <p><i>Goal-driven, ready to perform, and eager to learn.</i></p>
+            <h3 class="text-muted">IT <b>Specialist</b> | Field <b>Technician</b> | Web <b>Developer</b></h3>
+            <p><i>A goal-oriented individual with a focus on customer experience that prioritizes craftsmanship.</i></p>
         </div>
     </div>
 )

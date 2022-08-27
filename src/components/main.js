@@ -5,7 +5,7 @@ import Home from './home';
 import About from './about';
 import Contact from './contact';
 import Work from './work';
-import Stuff from './stuff';
+import Other from './other';
 
 const Main = () => (
     <Switch>
@@ -14,7 +14,7 @@ const Main = () => (
         <Route path="/about" component={About} />
         <Route path="/contact" component={Contact} />
         <Route path="/work" component={Work} />
-        <Route path="/stuff" component={Stuff} />
+        <Route path="/other" component={Other} />
     </Switch>
 )
 

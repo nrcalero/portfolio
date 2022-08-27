@@ -31,15 +31,15 @@ class App extends Component {
 								<Link className="nav-link" to="/contact">Contact</Link>
 							</li>
 							<li className="nav-item">
-								<Link className="nav-link" to="/stuff">Stuff</Link>
+								<Link className="nav-link" to="/other">Other</Link>
 							</li>
 						</ul>
 					</div>
 				</nav>
 				<Main />
 				<div className="footer container-fluid text-right">
-					<p>© 2018 nrcalero</p>
-					<p>Built with Bootstrap</p>
+					<p>© 2022 Nathanyel Calero</p>
+					<p>Built with Bootstrap and React</p>
 				</div>
 			</div>
 		);
