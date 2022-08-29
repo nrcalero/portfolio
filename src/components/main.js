@@ -1,5 +1,5 @@
 import React from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
 import Home from './home';
 import About from './about';
@@ -8,14 +8,14 @@ import Work from './work';
 import Other from './other';
 
 const Main = () => (
-    <Switch>
-        <Route exact path="/" component={Home} />
-        <Route path="/portfolio" component={Home} />
-        <Route path="/about" component={About} />
-        <Route path="/contact" component={Contact} />
-        <Route path="/work" component={Work} />
-        <Route path="/other" component={Other} />
-    </Switch>
+    <Routes>
+        <Route exact path="/" element={<Home/>} />
+        <Route path="/portfolio" element={<Home/>} />
+        <Route path="/about" element={<About/>} />
+        <Route path="/contact" element={<Contact/>} />
+        <Route path="/work" element={<Work/>} />
+        <Route path="/other" element={<Other/>} />
+    </Routes>
 )
 
 export default Main;
